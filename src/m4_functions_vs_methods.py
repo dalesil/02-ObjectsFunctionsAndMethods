@@ -213,14 +213,21 @@ def try_methods_and_functions():
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
-import rosegraphics as rg
-import math
 aaryan = rg.SimpleTurtle()
 aaryan.pen = rg.Pen('blue', 5)
 aaryan.backward(150)
-aaryan.speed(1)
-
-
+aaryan.speed = 1
+draw_many_squares(aaryan, 2, 100, 30)
+aaryan.speed = 5
+aaryan.pen = rg.Pen('red', 5)
+draw_many_squares(aaryan, 10, 50, 15)
+aaryan.speed = 100
+aaryan.pen = rg.Pen('red', 35)
+draw_many_squares(aaryan, 8, 300, 60)
+aaryan.pen = rg.Pen('black', 3)
+aaryan.backward(200)
+aaryan.draw_circle(50)
+aaryan.draw_square(50)
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
